@@ -59,14 +59,20 @@ function removeEveryOther(arr) {
 //ALT:
 
 function removeEveryOther(arr){
-    return arr.filter(function(elem, index) {
-      return index % 2 === 0;
+    return arr.filter(function(elem, index) { //filter method, passing anon function with (elem, index)
+      return index % 2 === 0; //  i need to understand how this line works better
     });
   }
 
   function removeEveryOther(arr){
       return arr.filter(function(elem, index) {
           return index % 2 === 0;
+      })
+  }
+
+  function removeEveryOtger(arr) {
+      return arr.filter(function(elem, index){
+          return index % 2 ===0;
       })
   }
 
