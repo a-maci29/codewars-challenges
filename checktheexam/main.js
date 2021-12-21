@@ -95,7 +95,7 @@ function checkExam(array1, array2) {
           if (x === "") {
               points += 0;
           } else if (x === array1[y]) {
-              point += 4;
+              points += 4;
           } else {
               points += -1;
           }
@@ -103,18 +103,21 @@ function checkExam(array1, array2) {
       return points > 0 ? points : 0;
   }
 
-  function checkExam(array1, array2) {
-      let points = 0;
+  
 
-      array2.map((x, y) => {
-          if (x === "") {
-              points += 0;
-          } else if (x === array1[y]) {
-              point += 4;
-          } else {
-              points += -1;
-          }
-      });
-      return points > 0 ? points : 0;
+  function checkExam(array1, array2) {
+    let points = 0;
+    
+    array2.map((x, y) => {
+      if (x === "") {
+        points += 0;
+      } else if (x === array1[y]) {
+        points += 4;
+      } else {
+        points += -1;
+      }
+    })
+    
+    return points > 0 ? points : 0;
   }
   /* from MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map */
