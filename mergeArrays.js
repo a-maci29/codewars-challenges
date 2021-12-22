@@ -19,9 +19,14 @@ arr6 = [1, 2, 3, 4, 5, 10, 12];
 mergeArrays(arr5, arr6);  // [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
 
 
+
 function mergeArrays(arr1, arr2) {
   return Array.from(new Set([...arr1,...arr2])).sort((a,b)=>a-b);
 }
+//the set is taking in all the elements from arr1 and arr2 via the spread operator, before turning it into a set of unique values
+//Array.from is turning it from an object into an array, which is then sorted in ascending order through .sort()
+
+
 
 function mergeArrays(arr1, arr2) {
     return Array.from(new Set([...arr1, ...arr2])).sort((a,b)=> a - b);
@@ -46,3 +51,7 @@ const _ = require('lodash');
 function mergeArrays(arr1, arr2) {
   return _.sortBy(_.union(arr1, arr2));
 }
+
+//notes about set:
+// the a - b logic occurs by comparing the sorted values of the array
+//same with a+b
