@@ -15,6 +15,7 @@ function rentalCarCost(d) {
   
   //from 3-7 days, total - $20
   
+
   //if d > 7,
   
   //7+ days, -$50
@@ -32,6 +33,9 @@ function rentalCarCost(d) {
 
     function rentalCarCost(d) {
   return d * 40 - (d >= 7 ? 50 : (d >= 3 ? 20 : 0));
+    }
+  funtion rentalCarCost(d){
+  return d * 40 - (d >= 7 ? 50 : (d >= 3 ? 20 :0));
   //return (days * 40) - (if d >= 7) or (d >= 3) (return if 0)
 }
 
