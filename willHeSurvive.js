@@ -31,4 +31,16 @@ function hero(bullets, dragons){
     return (bullets/2 >= dragons) ? true : false;
 }
 
+function hero(bullets, dragons){
+    return (bullets / 2 >= dragons) ? true : false;
+}
+
+function hero(bullets, dragons){
+    return (bullets / 2 >= dragons) ? true : false;
+}
+
+function hero(bullets, dragons){
+    return (bullets / 2 >= dragons) ? true : false;
+}
+
 //return true if the numbers of bullets(divided by 2) is equal to or greater than the number of dragons; else, return false
