@@ -11,10 +11,16 @@
 function isIsogram(str){
     //split the string, will turn into an array
       let characters = str.toLowerCase().split('')
-     return characters.every((e, index) =>
-    characters.indexOf(e) === index
+     return characters.every((e, index) => //the every() method runs a conditional test on each item in an array, and returns a boolean
+    characters.indexOf(e) === index //if the index of the element matches another array element, it means there is a repeating character
    )
   }
+
+function isIsogram(str){
+    let characters = str.toLowerCase().split('')
+    return characters.every((e, index) =>
+    characters.indexOf(e) === index)
+}
 
 
 //alt:  
