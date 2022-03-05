@@ -1,3 +1,9 @@
+//Congrats, you found the secret file.
+//This is not a codewar, but is a garbage pile for practicing, notes, tips, tricks, etc etc.
+//How did you get here?
+
+//Judge me by my wit, not by my code. Amen.
+
 const colors = ['blue', 'red', 'yellow', 'blue', 'white', 'red', 'blue']
 const colorCount = {} //creating empty object; will return 'undefined'
 for (let i = 0; i < colors.length; i++) { //loop through each element in the array
