@@ -12,8 +12,23 @@ for (let i = 0; i < colors.length; i++) { //loop through each element in the arr
     let count = colorCount[color] //count is another variable holding the value of the property of the colorCount (the property = color) | Checks to see if the property already exists in the colorCount object
     if (!count) { //if there is no existing count, it's the first time the loop has seen that particular property
         colorCount[color] = 1 //sets to one, the first time it's seeing that property
-    }else{
+    } else {
         colorCount[color] = count + 1 //adds +1 to the previous count ; has seeen this property before
     }
 }
 console.log(colorCount)
+
+//Getters and Setters:
+const person = {
+    firstName: 'red',
+    lastName: 'panda',
+    get secretMessage() {
+        return 'Turning Red was a good movie and you should watch it.'
+    },
+        set secretMessage(screwDisneyThough) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+console.log(person)
