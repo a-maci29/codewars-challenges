@@ -22,13 +22,32 @@ console.log(colorCount)
 const person = {
     firstName: 'red',
     lastName: 'panda',
-    get secretMessage() {
+    get secretMessage() { //getters are used to access properties inn an object
         return 'Turning Red was a good movie and you should watch it.'
     },
-        set secretMessage(screwDisneyThough) {
-        const parts = value.split(' ');
-        this.firstName = parts[0];
-        this.lastName = parts[1];
+        set secretMessage(value) {  //setters change or mutate them
+        const parts = value.split(' '); //creates an array out of the value
+        this.firstName = parts[0]; //accesses the first item in the array
+        this.lastName = parts[1]; //accesses the second item of the array
     }
 };
 console.log(person)
+
+
+//Another
+const dads = {
+	firstName: 'Ron',
+  lastName: 'Stampler',
+  get fullName() {
+  return `${person.firstName} ${person.lastName}`
+  },
+  set fullName(value) {
+  const dadFight = value.split(' '); 
+  this.firstName = dadFight[0];
+  this.lastName = dadFight[1];
+  }
+};
+
+person.fullName = 'Glenn Close';
+
+console.log(dads);
