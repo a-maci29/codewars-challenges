@@ -51,3 +51,4 @@ const dads = {
 person.fullName = 'Glenn Close';
 
 console.log(dads);
+
