@@ -11,6 +11,18 @@
 // because you drank ten standard drinks
 
 function hydrate(s) {
+    let splitS = s.split(' ')
+    let totalDrinks = splitS.map(e => parseInt(e)).reduce((acc, curr) => !isNaN(curr) ? acc + curr : acc)
+   if(totalDrinks > 1){
+    return `${totalDrinks} glasses of water`
+    }else{
+      (totalDrinks === 1)
+      return `${totalDrinks} glass of water`
+    }
+    } 
+//alt
+
+function hydrate(s) {
   let answer = 0;
   for (let i = 0; i < s.length; i++) {
     if (parseInt(s[i]) > 0) {
@@ -18,6 +30,16 @@ function hydrate(s) {
     }
   }
   return answer > 1 ? `${answer} glasses of water`: '1 glass of water'
+}
+
+function hydrate(s) {
+    let answer = 0;
+    for (let i = 0; i < s.length; i++){
+        if(parseInt(s[i]) > 0) {
+            answer += +s[i];
+        }
+    }
+    return answer > 1 ? `${answer} glasses of water`: '1 glass of water'
 }
 
 //alt
@@ -36,4 +58,10 @@ function hydrate(s) {
     let amount = s.split('').filter(e => Number(e)).reduce((a,b) => Number(a) + Number(b));
     
     return `${amount} ${amount == 1 ? 'glass' : 'glasses'} of water`;
+  }
+
+  function hydrate(s){
+      let amount = s.split('').filter(e => Number(e)).reduce((a, b) => Number(a) + Number(b));
+
+      return `${amount}`
   }
