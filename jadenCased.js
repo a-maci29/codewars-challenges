@@ -13,11 +13,7 @@ String.prototype.toJadenCase = function () {
   }).join(" ");
 }
 
-String.prototype.toJadenCase = function () {
-    return this.split(" ").map(function(word){
-        return word.charAt(0).toUpperCase() + word.splice(1);
-    }).join(" ");
-}
+
 
 
 
