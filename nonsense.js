@@ -22,7 +22,7 @@ console.log(colorCount)
 const person = {
     firstName: 'red',
     lastName: 'panda',
-    get secretMessage() { //getters are used to access properties inn an object
+    get secretMessage() { //getters are used to access properties in an object
         return 'Turning Red was a good movie and you should watch it.'
     },
         set secretMessage(value) {  //setters change or mutate them
