@@ -40,6 +40,33 @@ function findNeedle(haystack) {
 function findNeedle(haystack) {
   return "found the needle at position " + haystack.indexOf("needle");
 }
+
+
+
+//alt:
+
+function findNeedle(array) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === 'needle')
+      return 'found the needle at position ' + i;
+  }
+
+}
+
+function findNeedle(array){
+  for(let i = 0; i < array.length; i++){
+    if (array[i] === 'needle')
+    return 'found the needle at position ' + i
+  }
+}
+
+function findNeedle(array){
+  for(let i = 0; i < array.length; i++){
+    if (array[i] === "needle")
+    return 'found the needle at position ' + i
+  }
+}
+
 //couldn't use the find() method?
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 
