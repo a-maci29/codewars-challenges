@@ -16,6 +16,15 @@
 // You cannot assume the size of the array.
 // // You can assume that you do get an array and if the array is empty, return 0.
 
+
+function sumMix(x){
+  let numbers = x.map(e => Number(e))
+  console.log(numbers)
+ return numbers.reduce((acc, curr) => acc + curr)
+ }
+
+ //alt
+
 function sum(numbers) {
     return numbers.reduce((a, b) => a + b, 0);
   }
