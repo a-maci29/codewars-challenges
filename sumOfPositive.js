@@ -18,6 +18,16 @@ function positiveSum(arr) {
 }
 
 function positiveSum(arr) {
+  let total = 0;
+  for(i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      let += arr[i];
+    }
+  }
+  return total;
+}
+
+function positiveSum(arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) {
@@ -25,6 +35,15 @@ function positiveSum(arr) {
       }
   }
   return sum;
+}
+
+function positiveSum(arr) {
+  let sum = 0;
+  for(let i =0; i < arr.length; i++){
+    if (arr[i] > 0) {
+      let += arr[i]
+    }
+  }
 }
 
 function positiveSum(arr) {
@@ -48,3 +67,14 @@ function positiveSum(arr) {
 function positiveSum (arr) {
     return arr.filter(x => x>=0).reduce((a, c) => a + c, 0);
   }
+
+//with ternary:
+
+const positiveSum = (arr) => arr.reduce((sum, n) => n > 0 ? sum + n : sum, 0);
+// arr = parameter
+// sum is total sum, n is the current value, of the indice of the array(?)
+// n > 0 ? sum + n : sum, 0
+// if it is true that n is greater than 0, it is added to sum, else returns sum. 0 is the initial value.
+
+const positiveSum = (arr) => arr.reduce((sum, n) => n > 0 ? sum + n : sum, 0)
+// reduce => accumulator, current value => acc + curr 
