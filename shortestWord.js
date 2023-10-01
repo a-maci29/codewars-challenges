@@ -9,7 +9,18 @@ function findShort(s){
   return sortWords[0].length
 }
 
+//#2
+function findShort(s){
+  let toArr = (s.split(' ')).sort((a, b) => a.length - b.length)
+  return toArr[0].length
+}
+
 //alt:
 function findShort(s){
     return s.split(' ').sort((a,b) => a.length - b.length)[0].length;
+  }
+
+  //alt:
+  function findShort(s){
+    return Math.min.apply(null, s.split(' ').map(w => w.length));
   }
